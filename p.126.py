@@ -23,11 +23,13 @@ while choice == 'Y':
     name.append(element2)
     
     if element2 == 'N':
+        name.pop()
         break
     else:
         print('type more elements')
-    
-name.pop()
-name.insert(-1, 'and')
+if len(name) >= 2:
+    name.insert(-1, 'and')
+    print(name)
+else:
+    print(name)
 #name.remove(',')
-print(name)
