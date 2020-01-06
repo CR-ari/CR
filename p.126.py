@@ -27,9 +27,14 @@ while choice == 'Y':
         break
     else:
         print('type more elements')
+
+        
 if len(name) >= 2:
     name.insert(-1, 'and')
-    print(name)
+    name1 = ' '.join(name)
+    name2 = name1.replace(' ',',')
+    print(name2)
 else:
-    print(name)
-#name.remove(',')
+    name1 = ' '.join(name)
+    name2 = name1.replace(' ', ',')
+    print(name2)
